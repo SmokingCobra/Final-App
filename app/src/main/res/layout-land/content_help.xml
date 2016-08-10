@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jonschold.fragmentlayout.HelpActivity"
+    tools:showIn="@layout/activity_help"
+    android:background="@color/mainGray">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I’ve designed this app with the intention to be able to show others a brief history of the work I’ve done musically, and also to give an insight into how I do what I do. I hope that this app gives you an idea of my musical career, and possibly sparks some conversation or further creativeness. \n\n  Thanks for taking the time to peruse."
+        android:id="@+id/aboutTXT"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_marginBottom="44dp"
+        android:src="@drawable/face_photo"
+        android:layout_above="@+id/aboutTXT"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jonschold.fragmentlayout.RecordingsActivity"
+    android:background="@color/mainGray">
+
+
+    <ImageButton
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:id="@+id/ekklesia_pic_button"
+        android:src="@drawable/open_my_eyes_cover"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_alignTop="@+id/logan_pic_button"
+        android:layout_alignLeft="@+id/tmi_pic_button"
+        android:layout_alignStart="@+id/tmi_pic_button" />
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/logan_pic_button"
+        android:src="@drawable/logan_pic"
+        android:layout_row="0"
+        android:layout_column="3"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_below="@+id/isaiah_pic_button"
+        android:layout_alignLeft="@+id/isaiah_pic_button"
+        android:layout_alignStart="@+id/isaiah_pic_button"
+        android:layout_marginTop="68dp" />
+
+    <ImageButton
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:id="@+id/isaiah_pic_button"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/isaiah_pic"
+        android:layout_gravity="center"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="137dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:id="@+id/tmi_pic_button"
+        android:layout_row="3"
+        android:layout_column="3"
+        android:src="@drawable/tmi_pic"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:layout_alignTop="@+id/isaiah_pic_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="I play drums in all these songs, along with guitar in Open My Eyes. \n\n Click to play/pause."
+        android:id="@+id/recordingExplanationText"
+        android:layout_below="@+id/ekklesia_pic_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:textIsSelectable="false"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:gravity="center_vertical|center_horizontal" />
+</RelativeLayout>

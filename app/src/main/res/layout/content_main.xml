@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jonschold.fragmentlayout.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/mainGray">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gear"
+        android:id="@+id/GearBTTN"
+        android:layout_marginBottom="93dp"
+        android:clickable="true"
+        android:nestedScrollingEnabled="false"
+        android:background="@drawable/button_background"
+        android:width="120sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/locationBTTN"
+        android:layout_toStartOf="@+id/locationBTTN"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Locations"
+        android:id="@+id/locationBTTN"
+        android:clickable="true"
+        android:nestedScrollingEnabled="false"
+        android:background="@drawable/button_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:width="120sp"
+        android:layout_alignTop="@+id/GearBTTN"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:src="@drawable/main_pic"
+        android:layout_marginBottom="49dp"
+        android:layout_above="@+id/GearBTTN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="about"
+        android:id="@+id/AboutBTTN"
+        android:clickable="true"
+        android:nestedScrollingEnabled="false"
+        android:background="@drawable/button_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:width="120sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/GearBTTN"
+        android:layout_toEndOf="@+id/GearBTTN" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="JON SCHOLD"
+        android:id="@+id/NameTXT"
+        android:textSize="50sp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="A PORTFOLIO"
+        android:id="@+id/portfolioTXT"
+        android:layout_below="@+id/NameTXT"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recordings"
+        android:id="@+id/recordingsBTTN"
+        android:clickable="true"
+        android:nestedScrollingEnabled="false"
+        android:background="@drawable/button_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:width="120sp"
+        android:layout_alignTop="@+id/locationBTTN"
+        android:layout_toRightOf="@+id/locationBTTN"
+        android:layout_toEndOf="@+id/locationBTTN"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp" />
+
+
+</RelativeLayout>
